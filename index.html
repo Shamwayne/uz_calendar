@@ -1,0 +1,54 @@
+<!doctype html>
+<html manifest="part21.appcache">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Part 2 Schedule!</title>
+	<link rel="stylesheet" href="css/main.css" />
+	<script src="js/main.js"></script>
+	<script src="js/schedule.js"></script>
+</head>
+<body>
+  <header class="topmenu">
+		<h1>Welcome to UZ Part 2.1 CS Courses!</h1>
+		<h3>Of course you COULD use a spreadsheet... But we Computer Scientists!</h3>
+  </header>
+
+  <main>
+		<fieldset class="mainarea">
+	  <legend>Pick a date, any date!</legend>
+
+	  	<select id="dateval">
+				<option value="monday"	>Monday	</option>
+				<option value="tuesday"	>Tuesday</option>
+				<option value="wednesday">Wednesday</option>
+				<option value="thursday">Thursday</option>
+				<option value="friday"	>Friday	</option>
+				<optgroup label="Extras">
+				  <option value="extra"	  >Extra Curricular	</option>
+				  <option value="projects">Personal Projects</option>
+				</optgroup>
+	  </select>
+		<label class="bttn">Let's go!
+	  	<button onclick="ajax_post()"></button>
+		</label>
+		<div id="schedule-display">
+	 		<p>Lets do this!</p>
+		</div>
+	</fieldset>
+</main>
+
+  <footer>
+	<p>
+		Made by <a href="www.aztec.net16.net">Shingi</a> for no
+		particular reason. please enjoy! Or don't enjoy. Doesn't
+		really matter.
+	</p>
+  </footer>
+
+
+
+</body>
+
+
+</html>

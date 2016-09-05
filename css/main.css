@@ -1,0 +1,129 @@
+/* UZ Part 2 Computer Science Schedule */
+/* Author : Shingai M Shamu ;
+ 	 Frameworks used: none;
+	 Comments: Nothing that really needs explaining.
+*/
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.topmenu{
+	font-size: 1.5rem;
+}
+
+.topmenu h1{
+	background: #8E44AD ;
+	color: white;
+	font-family: "Open Sans", Calibri, Arial, sans-serif;
+}
+
+.topmenu h3{
+	background: #9f55be;
+	color: #333 ;
+	text-shadow: 1px 1px rgba(255,255,255,0.75) ;
+	font-family: "Bookman Old Style", "Cooper Black", serif;
+}
+
+body{
+	background: #fee ;
+}
+
+main{
+	font-family: "Open Sans", Calibri, Arial, sans-serif;
+	font-size: 1.3rem;
+}
+
+.mainarea{
+	background: white;
+	max-width: 70% ;
+	padding: 100px;
+	padding-bottom: 80px;
+	margin: auto;
+	margin-top: 40px;
+	border: 1px #8E44AD solid;
+	transition: all 1s ease-in-out;
+}
+
+select, .bttn{
+	font-size: 1.3rem;
+}
+
+.bttn{
+	padding: 0px 7px ;
+	background: #eef;
+	border: 2px #8E44AD solid;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.4s ease-in-out;
+}
+
+.bttn:hover{
+	background: #ddf ;
+	border: 2px red solid;
+}
+
+.bttn:focus{
+	background: #8E44AD ;
+}
+
+button{
+	display: none;
+}
+
+#schedule-display{
+	transition: all 1s ease-in-out;
+	background: #fffaff ;
+}
+
+.subjects{
+	margin-top: 20px ;
+	padding-left: 70px;
+	list-style: none;
+	transition: all 1s ease-in-out;
+}
+
+.time{
+	font-weight: bold;
+	color: #555 ;
+}
+
+footer{
+	position: absolute;
+	background: #222 ;
+	color: white;
+	font-size: 1.3rem;
+	font-family: "Bookman Old Style", "Cooper Black", serif;
+	width: 100% ;
+	padding: 10px;
+	bottom: 0px ;
+}
+
+@media screen and (max-width: 640px){
+	.mainarea{
+		padding: 70px;
+	}
+
+	footer{
+		position: static;
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 360px){
+	.mainarea{
+		padding: 0px;
+	}
+}
+footer a{
+	text-decoration: overline;
+	color: #eef;
+	font-weight: bold;
+}
+footer a:hover{
+	text-decoration: underline;
+	color: #9f55be ;
+}
